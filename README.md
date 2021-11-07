@@ -19,7 +19,7 @@ The present work aims to classify heartbeats as accurately as possible into four
   Figure 2. Examples of the ECG waveforms.</figcaption>
 </figure>
 
-The training of the Convolutional Neural Networks (CNNs) took place in 6048 time series, while the validation in 1513 (ie 20% of the original dataset). For the evaluation (testing) of the CNNs the validation set of the competition was used that consists of 260 heart rate signals. 
+The training of the Convolutional Neural Networks (CNNs) took place in 6048 time series, while the validation in 1513 (ie 20% of the original dataset). For the evaluation (testing) of the CNNs, the validation set of the competition was used that consists of 260 heart rate signals. 
 
 ## Preprocessing
 
