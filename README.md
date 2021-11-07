@@ -41,10 +41,9 @@ The aim of this work is the design of a neural network and the selection of that
 
 <div align="center">
   
-![equation](https://latex.codecogs.com/gif.latex?%5Cbg_white%20Accuracy%20%3D%20%5Cfrac%7BTP&plus;TN%7D%7BTP&plus;TN&plus;FP&plus;FN%7D), where TP, TN, FP, FN corresponds to True Positives, True Negatives, False Negatives and False Positives, respectively.
+![equation](https://latex.codecogs.com/gif.latex?%5Cbg_white%20Accuracy%20%3D%20%5Cfrac%7BTP&plus;TN%7D%7BTP&plus;TN&plus;FP&plus;FN%7D)
 </div>
-
-The examined parameters are:
+where TP, TN, FP, FN corresponds to True Positives, True Negatives, False Negatives and False Positives, respectively. The examined parameters are:
 
 * the convolutional layers
 * the pooling layers
