@@ -55,6 +55,17 @@ where TP, TN, FP, FN corresponds to True Positives, True Negatives, False Negati
 
 ## Results
 
+The search for the appropriate hyperparameters leads us to choose the following arcitecture with:
+* convolutional layer (*filters=8*)
+* maxPooling layer (*pool_size=(3,1), strides=(3,1)*)
+* convolutional layer (*filters=16*)
+* maxPooling layer (*pool_size=(2,1), strides=(2,1)*)
+* convolutional layer (*filters=8*)
+* maxPooling layer (*pool_size=(2,1), strides=(2,1)*)
+* dense layer (*filters=150, dropout=0.2*)
+* dense layer (*filters=50, full-connected*)
+* batch_size=16
+* learning_rate=0.0001
 
 
 <p align="center">
@@ -64,4 +75,9 @@ where TP, TN, FP, FN corresponds to True Positives, True Negatives, False Negati
 </figure>
 
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/80779522/140707773-18b4ed4c-84d8-4192-bbc1-f9d6ea71c066.png"  />
+<figcaption align = "center"><p align="center">
+  Figure 4. ROC curves.</figcaption>
+</figure>
 
