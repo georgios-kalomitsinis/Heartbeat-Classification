@@ -55,7 +55,7 @@ where TP, TN, FP, FN corresponds to True Positives, True Negatives, False Negati
 
 ## Results
 
-The search for the appropriate hyperparameters leads us to choose the following arcitecture with:
+The search for the appropriate hyperparameters leads us to choose the following architecture with:
 * convolutional layer (*filters=8*)
 * maxPooling layer (*pool_size=(3,1)*)
 * convolutional layer (*filters=16*)
