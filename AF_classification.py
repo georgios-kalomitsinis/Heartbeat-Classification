@@ -72,7 +72,7 @@ c = 1  # number of channels
 X_train = np.reshape(X_train, (X_train.shape[0], n, m, c))
 X_val = np.reshape(X_val, (X_val.shape[0], n, m, c))
 
-print('#############################################################################################################################################################################')
+print('#########################################################')
 print(X_train.shape, Y_train.shape, X_val.shape, Y_val.shape)
 
 
@@ -128,41 +128,19 @@ print(X_test.shape, Y_test.shape)
 
 
 # Initialising the CNN
-batch_size = 32
+batch_size = 16
 model = tf.keras.Sequential()
 
-# Step 1 - συνελικτικό επίπεδο 8 φίλτρων μήκους 10 με ενεργοποίηση Re.L.U.
-model.add(tf.keras.layers.Conv2D(filters=8, kernel_size=10,
-                                 activation='relu', input_shape=image_size, padding='same'))
-
-# Step 2 - επίπεδο υποδειγματοληψίας τύπου “μεγίστου” (max pooling) με λόγο υποδ. 3:1
-model.add(tf.keras.layers.MaxPool2D(pool_size=(3, 1), strides=(3, 1)))
-
-# Step 3 - συνελικτικό επίπεδο 16 φίλτρων μήκους 10 με ενεργοποίηση Re.L.U.
+model.add(tf.keras.layers.Conv2D(filters=8, kernel_size=10, activation='relu', input_shape=image_size, padding='same'))
+model.add(tf.keras.layers.MaxPool2D(pool_size=(3, 1)))
 model.add(tf.keras.layers.Conv2D(filters=16, kernel_size=10, activation='relu', padding='same'))
-
-# Step 4 - επίπεδο υποδειγματοληψίας τύπου “μεγίστου” (max pooling) με λόγο υποδ. 4:1
 model.add(tf.keras.layers.MaxPool2D(pool_size=(4, 1)))
-
-# Extra Step - συνελικτικό επίπεδο 16 φίλτρων μήκους 10 με ενεργοποίηση Re.L.U.
 model.add(tf.keras.layers.Conv2D(filters=8, kernel_size=10, activation='relu', padding='same'))
-
-# Extra Step - επίπεδο υποδειγματοληψίας τύπου “μεγίστου” (max pooling) με λόγο υποδ. 4:1
-model.add(tf.keras.layers.MaxPool2D(pool_size=(1, 2)))
-
-# Step 5 - Flattening
+model.add(tf.keras.layers.MaxPool2D(pool_size=(2, 1)))
 model.add(tf.keras.layers.Flatten())
-
-# Step 6 - επίπεδο 50 πλήρως συνδεδεμένων νευρώνων με ενεργοποίηση Re.L.U.
 model.add(tf.keras.layers.Dense(units=128, activation='relu'))
-
-# # Extra Step - Dropout
 model.add(tf.keras.layers.Dropout(0.1))
-
-# Extra Step - πλήρες συνδεδεμένος συνελικτικό επίπεδο X νευρώνων -- Working
 model.add(tf.keras.layers.Dense(64, activation='relu'))
-
-# Step 7 - Output Layer
 model.add(tf.keras.layers.Dense(units=4, activation='softmax'))
 
 
@@ -278,3 +256,4 @@ plt.ylabel('True Positive Rate')
 plt.title('Receiver operating characteristic to multi-class')
 plt.legend(loc="lower right")
 plt.show()
+plt.close()
