@@ -1,6 +1,6 @@
 # Heartbeat-Classification
 
-The present work aims to classify heartbeats as accurately as possible into four types using neural networks. The dataset used for both the training and the evaluation of the developed model comes from the [Physionet competition](https://physionet.org/content/challenge-2017/1.0.0/) held in 2017. In specific, we explore deep learning architectures that aim to identify electrocardiograms (ECGs) into 4 different categories: 
+The present work aims to classify heartbeats as accurately as possible into four types using neural networks. The dataset used for both the training and the evaluation of the developed model comes from the [Physionet competition](https://physionet.org/content/challenge-2017/1.0.0/) held in 2017 [1]. In specific, we explore deep learning architectures that aim to identify electrocardiograms (ECGs) into 4 different categories: 
 
 1) N : Normal Rhythm
 2) A : Atrial Fibrillation Rhythm
@@ -82,3 +82,7 @@ The search for the appropriate hyperparameters leads us to choose the following 
   Figure 4. ROC curves.</figcaption>
 </figure>
 
+## References
+
+<a id="1">[1]</a> 
+Clifford, G. D., Liu, C., Moody, B., Li-wei, H. L., Silva, I., Li, Q., ... & Mark, R. G. (2017, September). AF classification from a short single lead ECG recording: The PhysioNet/computing in cardiology challenge 2017. In 2017 Computing in Cardiology (CinC) (pp. 1-4). IEEE.
