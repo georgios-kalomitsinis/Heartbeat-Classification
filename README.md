@@ -57,14 +57,14 @@ where TP, TN, FP, FN corresponds to True Positives, True Negatives, False Negati
 
 The search for the appropriate hyperparameters leads us to choose the following arcitecture with:
 * convolutional layer (*filters=8*)
-* maxPooling layer (*pool_size=(3,1), strides=(3,1)*)
+* maxPooling layer (*pool_size=(3,1)*)
 * convolutional layer (*filters=16*)
-* maxPooling layer (*pool_size=(2,1), strides=(2,1)*)
+* maxPooling layer (*pool_size=(4,1)*)
 * convolutional layer (*filters=8*)
-* maxPooling layer (*pool_size=(2,1), strides=(2,1)*)
-* dense layer (*filters=150, dropout=0.2*)
-* dense layer (*filters=50, full-connected*)
-* batch_size=32
+* maxPooling layer (*pool_size=(2,1)*)
+* dense layer (*filters=128, dropout=0.1*)
+* dense layer (*filters=64, full-connected*)
+* batch_size=16
 * learning_rate=0.0001
 
 
