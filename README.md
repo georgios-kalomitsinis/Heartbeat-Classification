@@ -66,6 +66,7 @@ The search for the appropriate hyperparameters leads us to choose the following 
 * dense layer (*filters=64, full-connected*)
 * batch_size=16
 * learning_rate=0.0001
+* and Rectified Linear Unit (ReLu) as activation functions
 
 
 <p align="center">
