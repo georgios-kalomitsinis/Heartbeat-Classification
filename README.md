@@ -70,7 +70,7 @@ The search for the appropriate hyperparameters leads us to choose the following 
 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/80779522/140654522-5f6f0e5f-41ae-4061-8ba4-dbc3139d5364.png"  />
+<img src="https://user-images.githubusercontent.com/80779522/140717639-0072d568-ce6a-4d77-9d3f-b2d0b3221742.png"  />
 <figcaption align = "center"><p align="center">
   Figure 3. Suggested architecture.</figcaption>
 </figure>
