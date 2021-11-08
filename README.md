@@ -64,7 +64,7 @@ The search for the appropriate hyperparameters leads us to choose the following 
 * maxPooling layer (*pool_size=(2,1), strides=(2,1)*)
 * dense layer (*filters=150, dropout=0.2*)
 * dense layer (*filters=50, full-connected*)
-* batch_size=16
+* batch_size=32
 * learning_rate=0.0001
 
 
