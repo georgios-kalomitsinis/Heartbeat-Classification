@@ -68,6 +68,7 @@ The search for the appropriate hyperparameters leads us to choose the following 
 * learning_rate=0.0001
 * and Rectified Linear Unit (ReLu) as activation functions
 
+The above architecture scored ```81% accuracy```.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/80779522/140717639-0072d568-ce6a-4d77-9d3f-b2d0b3221742.png"  />
